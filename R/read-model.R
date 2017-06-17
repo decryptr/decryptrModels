@@ -14,6 +14,6 @@
 read_model <- function(model_name) {
   path <- system.file('keras', package = 'decryptrModels')
   files <- dir(path, full.names = TRUE)
-  file_path <- files[grepl(nm, files)]
+  file_path <- files[grepl(model_name, files)]
   keras::load_model_hdf5(file_path)
 }
