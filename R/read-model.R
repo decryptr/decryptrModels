@@ -13,6 +13,7 @@
 #' @export
 read_model <- function(model_name) {
   path <- system.file('keras', package = 'decryptrModels')
-  file_path <- stringr::str_subset(dir(path, full.names = TRUE), nm)
+  files <- dir(path, full.names = TRUE)
+  file_path <- files[grepl(nm, files)]
   keras::load_model_hdf5(file_path)
 }
