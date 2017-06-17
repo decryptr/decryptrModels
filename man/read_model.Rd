@@ -15,7 +15,7 @@ Read keras model by regex
 \examples{
 
 \dontrun{
-read_model('nm')
+read_model('mg')
 }
 
 }
