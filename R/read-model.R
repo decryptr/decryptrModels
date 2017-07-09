@@ -15,6 +15,12 @@ read_model <- function(model_name) {
   path <- system.file('keras', package = 'decryptrModels')
   files <- dir(path, full.names = TRUE)
   file_path <- files[grepl(model_name, files)]
-  keras::load_model_hdf5(file_path)
+  labs <- models[grepl(model_name, models[['name']]), 'labs'][[1]]
+  m <- list(
+    labs = labs,
+    model = keras::load_model_hdf5(file_path)
+  )
+  class(m) <- 'captcha'
+  m
 }
 
