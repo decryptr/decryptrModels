@@ -3,3 +3,7 @@
 # decryptrModels
 
 decryptr models repository
+
+```
+decryptrModels::read_model('tjmg')
+```
