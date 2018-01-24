@@ -26,16 +26,14 @@ labs <- list(
   rfb = labs_rfb,
   trt = labs_trt,
   tjmg = labs_tjmg,
-  esaj = labs_esaj
-)
+  esaj = labs_esaj)
+
 # ------------------------------------------------------------------------------
 # ------------------------------------------------------------------------------
 # DO NOT MODIFY HERE -----------------------------------------------------------
 models <- tibble::tibble(
   name = names(labs),
-  labs = labs,
-  model = purrr::map(labs, ~list())
-)
+  labs = labs)
 
-## run this after you added your model
-# devtools::use_data(models, internal = TRUE, overwrite = TRUE)
+# run this after you added your model
+devtools::use_data(models, overwrite = TRUE)
