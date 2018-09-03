@@ -50,4 +50,4 @@ models <- tibble::tibble(
   labs = labs)
 
 # run this after you added your model
-devtools::use_data(models, overwrite = TRUE)
+devtools::use_data(models, overwrite = TRUE, internal = TRUE)
