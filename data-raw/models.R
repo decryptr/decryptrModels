@@ -34,6 +34,8 @@ labs_tjes <- c(0:9, letters)
 
 labs_tjrs <- c(0:9)
 
+labs_jucesp <- c(0:9, letters)
+
 # Modify here ------------------------------------------------------------------
 # ------------------------------------------------------------------------------
 labs <- list(
@@ -45,7 +47,8 @@ labs <- list(
   cadesp = labs_cadesp,
   nfesp = labs_nfesp,
   tjes = labs_tjes,
-  tjrs = labs_tjrs
+  tjrs = labs_tjrs,
+  jucesp = labs_jucesp
 )
 
 # ------------------------------------------------------------------------------
@@ -56,4 +59,4 @@ models <- tibble::tibble(
   labs = labs)
 
 # run this after you added your model
-devtools::use_data(models, overwrite = TRUE, internal = TRUE)
+usethis::use_data(models, overwrite = TRUE, internal = TRUE)
