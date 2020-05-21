@@ -60,3 +60,4 @@ models <- tibble::tibble(
 
 # run this after you added your model
 usethis::use_data(models, overwrite = TRUE, internal = TRUE)
+usethis::use_data(models, overwrite = TRUE)
