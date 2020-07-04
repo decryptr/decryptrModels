@@ -18,9 +18,8 @@ read_model <- function(model_name) {
   labs <- models[grepl(model_name, models[['name']]),][['labs']][[1]]
   m <- list(
     labs = labs,
-    model = keras::load_model_hdf5(file_path)
+    model = keras::load_model_tf(file_path)
   )
   class(m) <- 'captcha'
   m
 }
-
