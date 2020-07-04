@@ -7,7 +7,7 @@
 #' @examples
 #'
 #' \dontrun{
-#' read_model('mg')
+#' read_model('tjmg')
 #' }
 #'
 #' @export
