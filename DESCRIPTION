@@ -1,6 +1,6 @@
 Package: decryptrModels
 Title: decryptr models repository
-Version: 0.0.0.9000
+Version: 0.0.1
 Authors@R: person("Julio", "Trecenti", email = "j@jtrecenti.com", role = c("aut", "cre"))
 Description: decryptr models repository.
 Depends: R (>= 3.4.0)
