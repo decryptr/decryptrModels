@@ -36,6 +36,8 @@ labs_tjrs <- c(0:9)
 
 labs_jucesp <- c(0:9, letters)
 
+labs_trf <- c(1:9)
+
 # Modify here ------------------------------------------------------------------
 # ------------------------------------------------------------------------------
 labs <- list(
@@ -48,7 +50,8 @@ labs <- list(
   nfesp = labs_nfesp,
   tjes = labs_tjes,
   tjrs = labs_tjrs,
-  jucesp = labs_jucesp
+  jucesp = labs_jucesp,
+  trf = labs_trf
 )
 
 # ------------------------------------------------------------------------------
